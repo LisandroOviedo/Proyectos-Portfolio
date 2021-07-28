@@ -29,7 +29,7 @@ go
 
 
 --Top 5 atletas mas viejos de las olimpiadas
---Se selecciona desde el año 2014 porque de otra forma el top 5 atletas es ocupado por competidores de deportes que no se juegan actualmente. (Competiciones de arte)
+--Se selecciona desde el aÃ±o 2014 porque de otra forma el top 5 atletas es ocupado por competidores de deportes que no se juegan actualmente. (Competiciones de arte)
 
 Select  DISTINCT top 5 name, age, sport, event, noc, games, city, medal 
 from athlete_events$
@@ -42,7 +42,7 @@ go
 
 -- QUERIES PARA VISUALIZAR MAS ADELANTE
 
--- Cantidad de atletas por año (olimpiadas verano)
+-- Cantidad de atletas por aÃ±o (olimpiadas verano)
 Select year, count(*) as num_atletas 
 from athlete_events$
 where season = 'Winter'
